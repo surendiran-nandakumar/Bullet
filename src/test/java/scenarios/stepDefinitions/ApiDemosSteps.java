@@ -28,6 +28,7 @@ public class ApiDemosSteps {
     @Given("User click on Preference option")
     public void userClickOnPreferenceOption() {
         apiDemosPage.clickOnPreference();
+        System.out.println("it is executing");
     }
 
     @When("User click on Preference Dependencies option")
