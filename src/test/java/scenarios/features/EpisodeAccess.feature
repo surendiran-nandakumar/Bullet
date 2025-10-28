@@ -14,7 +14,7 @@ Feature: Episode Access Feature
 
     Examples:
       | Mobile Number |
-      | 7604913183   |
+      | 8777766554   |
 
 
   @BulletTest @TC_051
