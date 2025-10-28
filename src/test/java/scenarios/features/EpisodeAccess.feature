@@ -42,10 +42,7 @@ Feature: Episode Access Feature
     Then Episodes PopUp should visible
     Then User should click on locked episode
     Then User should see unlock this video popup
-    Then User should see refill wallet and unlock button
     Then User should see watch ad & unlock for free
-    Then User should click on refill wallet and unlock button
-    Then User should see refill coins popup screen
     Then User should click any coins payment
     Then User should see payment gateway screen
 
@@ -64,10 +61,7 @@ Feature: Episode Access Feature
     Then Episodes PopUp should visible
     Then User should click on locked episode
     Then User should see unlock this video popup
-    Then User should see refill wallet and unlock button
     Then User should see watch ad & unlock for free
-    Then User should click on refill wallet and unlock button
-    Then User should see refill coins popup screen
     Then User should click any coins payment
     Then User should see payment gateway screen
     Then User should select card status
@@ -92,10 +86,7 @@ Feature: Episode Access Feature
     Then Episodes PopUp should visible
     Then User should click on locked episode
     Then User should see unlock this video popup
-    Then User should see refill wallet and unlock button
     Then User should see watch ad & unlock for free
-    Then User should click on refill wallet and unlock button
-    Then User should see refill coins popup screen
     Then User should click any coins payment
     Then User should see payment gateway screen
     Then User should select card status
@@ -103,10 +94,8 @@ Feature: Episode Access Feature
     Then User should click on Buy button
     Then User should see Error popup
     Then User should click on Got it button
-    Then User should see refill coins popup screen
+    Then User should see unlock this video popup
     Then User should tap over the screen so the popup will disappear
-    And User should see the pause button
-
 
     Examples:
       | Mobile Number | Payment status |
