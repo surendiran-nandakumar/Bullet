@@ -20,7 +20,7 @@ import java.util.List;
 
 public class EpisodeAccessPages extends BasePage {
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"UNLOCK THIS VIDEO\"]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Low Balance\"]")
     public WebElement unlockVideoPopup;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Refill wallet and unlock\"]")
@@ -35,7 +35,7 @@ public class EpisodeAccessPages extends BasePage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"REFILL WALLET & WATCH\"]")
     public WebElement refillCoinScreenPopup;
 
-    @AndroidFindBy(xpath = "//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"150\"]")
     public WebElement firstPaymentSelect;
 
     @AndroidFindBy(xpath = "(//android.widget.LinearLayout[@resource-id=\"com.android.vending:id/0_resource_name_obfuscated\"])[4]/android.widget.LinearLayout[1]")
