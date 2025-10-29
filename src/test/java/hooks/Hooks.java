@@ -54,6 +54,7 @@ public class Hooks {
         context.otp = new String(String.valueOf(context.driver));
         context.profileScreenPages = new ProfileScreenPages(context.driver);
         context.searchPages = new SearchPages(context.driver);
+        context.paymentsAndCoinsPages = new PaymentsAndCoinsPages(context.driver);
     }
 
     @After

@@ -25,4 +25,5 @@ public class TestContext {
     public String otp;
     public ProfileScreenPages profileScreenPages;
     public SearchPages searchPages;
+    public PaymentsAndCoinsPages paymentsAndCoinsPages;
 }
