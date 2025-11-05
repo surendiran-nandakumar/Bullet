@@ -23,7 +23,7 @@
         <version.io.rest-assured>4.4.0</version.io.rest-assured>
         <version.selenium-java>4.21.0</version.selenium-java>
         <version.maven-surefire-plugin>3.0.0-M5</version.maven-surefire-plugin>
-        <version.lombok>1.18.30</version.lombok>
+        <version.lombok>1.18.34</version.lombok>
         <version.io.appium.java-client>9.2.3</version.io.appium.java-client>
         <threadCount>1</threadCount>
     </properties>

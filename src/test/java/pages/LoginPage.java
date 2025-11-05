@@ -105,7 +105,6 @@ public class LoginPage extends BasePage {
         click(nextArrow);
     }
     public void clickOTP(){
-
         click(otpAllowButton);
     }
 

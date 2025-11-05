@@ -145,4 +145,11 @@ public class HomeScreenStepDefs {
     }
 
 
+    @Then("User is on home screen")
+    public void userIsOnHomeScreen() {
+
+        homeScreenPages.CloseAddIfPresent();
+        Assert.assertTrue(homeScreenPages.isHomeNavButtonVisible(),"Home Nav button not visible");
+
+    }
 }
