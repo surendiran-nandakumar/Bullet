@@ -64,6 +64,8 @@ public class HomeScreenPages extends BasePage {
     public WebElement backIconClick;
     @AndroidFindBy (xpath = "//android.view.View[@content-desc=\"Close sheet\"]")
     public WebElement closeSheet;
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Close\"]")
+    public  WebElement CloseAddButton;
 
 
 
@@ -93,6 +95,24 @@ public class HomeScreenPages extends BasePage {
         Assert.assertTrue(HomeNavClick.isDisplayed());
         click(HomeNavClick);
     }
+    public boolean isHomeNavButtonVisible(){
+        return isElementPresent(HomeNavClick);
+    }
+    public void clickIfPresent(WebElement locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+            WebElement el = wait.until(ExpectedConditions.elementToBeClickable(locator));
+            el.click();
+
+            System.out.println("✅ clickIfPresent: ");
+        } catch (Exception e) {
+            System.out.println("⚠️ clickIfPresent: ");
+        }
+    }
+    public void CloseAddIfPresent(){
+        clickIfPresent(CloseAddButton);
+    }
+
 
     public void screenSwipe() {
         Dimension size = driver.manage().window().getSize();
