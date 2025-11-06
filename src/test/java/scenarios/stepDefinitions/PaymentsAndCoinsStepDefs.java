@@ -13,7 +13,7 @@ import utilities.ConfigLoader;
 import utilities.CredsLoader;
 
 public class PaymentsAndCoinsStepDefs {
-        private static final Logger log = LoggerFactory.getLogger(scenarios.stepDefinitions.PaymentsAndCoinsStepDefs.class);
+        private static final Logger log = LoggerFactory.getLogger(PaymentsAndCoinsStepDefs.class);
         private final PaymentsAndCoinsPages paymentsAndCoinsPages;
         CredsLoader credsLoader;
         ConfigLoader configLoader;

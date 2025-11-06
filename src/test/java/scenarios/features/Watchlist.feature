@@ -1,7 +1,7 @@
 Feature: Video Control Feature
 
   @BulletTest @TC_077
-  Scenario Outline:TC_077 Verify on tapping "+" icon, user is able to add show to watchlist
+  Scenario Outline:TES180 Verify on tapping "+" icon, user is able to add show to watchlist
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -20,7 +20,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_079
-  Scenario Outline:TC_079 Verify if user is able to delete show from Watchlist
+  Scenario Outline:TES182 Verify if user is able to delete show from Watchlist
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -45,7 +45,7 @@ Feature: Video Control Feature
       | 7604913183   |
 
   @BulletTest @TC_080
-  Scenario Outline:TC_080 Verify if user is able to add the same shows again to watchlist once deleted
+  Scenario Outline:TES183 Verify if user is able to add the same shows again to watchlist once deleted
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user

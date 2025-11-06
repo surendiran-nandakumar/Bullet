@@ -1,7 +1,7 @@
 Feature: Profile Screen Feature
 
   @BulletWallet @TC_088
-  Scenario Outline:TC_088 Verify the profile screen
+  Scenario Outline:TES191 Verify the profile screen
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     Then User should click on Wallet icon
@@ -26,7 +26,7 @@ Feature: Profile Screen Feature
 
 
   @BulletWallet @TC_089
-  Scenario Outline:TC_089 Verify user is able to edit the profile
+  Scenario Outline:TES192 Verify user is able to edit the profile
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     Then User should click on Wallet icon
@@ -46,7 +46,7 @@ Feature: Profile Screen Feature
 
 
   @BulletWallet @TC_091
-  Scenario Outline:TC_091 Verify if user is able to deactivate the account
+  Scenario Outline:TES194 Verify if user is able to deactivate the account
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     Then User should click on Wallet icon

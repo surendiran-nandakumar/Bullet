@@ -13,7 +13,7 @@ Feature: Language Preference Screen Feature
       | 7604913183    |
 
   @BulletTest @TC_022 @Home
-  Scenario Outline: TC_022 Verify user is redirected to SFD feed on clicking a banner
+  Scenario Outline: TES125 Verify user is redirected to SFD feed on clicking a banner
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User should click on Home navigation icon
@@ -27,7 +27,7 @@ Feature: Language Preference Screen Feature
 
 
   @BulletTest @TC_024 @Home @P0
-  Scenario Outline: TC_024 Verify if user is able to scroll the different rails horizontally back and forth and all thumbnails are visible
+  Scenario Outline: TES127 Verify if user is able to scroll the different rails horizontally back and forth and all thumbnails are visible
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User should click on Home navigation icon
@@ -41,7 +41,7 @@ Feature: Language Preference Screen Feature
       | 7604913183    | 20    | 10  | 30     |
 
   @BulletTest @TC_025 @Home
-  Scenario Outline: TC_025 Verify the bottom nav bar options and redirections
+  Scenario Outline: TES128 Verify the bottom nav bar options and redirections
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User should click on Home navigation icon
@@ -58,7 +58,7 @@ Feature: Language Preference Screen Feature
       | 7604913183    |
 
   @BulletTest @TC_026 @Home
-  Scenario Outline: TC_026 Verify top nav bar options and redirections
+  Scenario Outline: TES129 Verify top nav bar options and redirections
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User should click on Home navigation icon
@@ -75,7 +75,7 @@ Feature: Language Preference Screen Feature
       | 7604913183    |
 
   @BulletTest @TC_027  @Home
-  Scenario Outline: TC_027 Verify if user receive any error in home screen
+  Scenario Outline: TES130 Verify if user receive any error in home screen
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     Then User should click on Home navigation icon

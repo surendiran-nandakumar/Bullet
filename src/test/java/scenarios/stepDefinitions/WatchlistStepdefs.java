@@ -15,7 +15,7 @@ import utilities.ConfigLoader;
 import utilities.CredsLoader;
 
 public class WatchlistStepdefs {
-    private static final Logger log = LoggerFactory.getLogger(scenarios.stepDefinitions.WatchlistStepdefs.class);
+    private static final Logger log = LoggerFactory.getLogger(WatchlistStepdefs.class);
     private final WatchlistPages watchlistPages;
     CredsLoader credsLoader;
     ConfigLoader configLoader;

@@ -17,7 +17,7 @@ import utilities.CredsLoader;
 
 
 public class LikeUnlikeStepdefs {
-    private static final Logger log = LoggerFactory.getLogger(scenarios.stepDefinitions.LikeUnlikeStepdefs.class);
+    private static final Logger log = LoggerFactory.getLogger(LikeUnlikeStepdefs.class);
     private final LikeUnlikePages likeUnlikePages;
     CredsLoader credsLoader;
     ConfigLoader configLoader;

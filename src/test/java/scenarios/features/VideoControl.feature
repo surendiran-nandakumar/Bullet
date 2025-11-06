@@ -1,7 +1,7 @@
 Feature: Video Control Feature
 
   @BulletTest @TC_058
-  Scenario Outline:TC_058 Verify if user is able to pause the episode playback
+  Scenario Outline:TES161 Verify if user is able to pause the episode playback
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -18,7 +18,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_059
-  Scenario Outline:TC_059 Verify if user is able to resume play
+  Scenario Outline:TES162 Verify if user is able to resume play
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -37,7 +37,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_060
-  Scenario Outline:TC_060 Verify if on increasing/ decreasing audio setting, audio of content increases/ decreases
+  Scenario Outline:TES163 Verify if on increasing/ decreasing audio setting, audio of content increases/ decreases
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -54,7 +54,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_063
-  Scenario Outline:TC_063 Verify if user is able to mute/ unmute while while watching content
+  Scenario Outline:TES166 Verify if user is able to mute/ unmute while while watching content
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -72,7 +72,7 @@ Feature: Video Control Feature
       | 7604913183   |
 
   @BulletTest @TC_069
-  Scenario Outline:TC_069 Verify if video playback gives any error
+  Scenario Outline:TES172 Verify if video playback gives any error
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -89,7 +89,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_072 @P0
-  Scenario Outline:TC_072 Verify trailer playback resumes on launching app to foreground
+  Scenario Outline:TES175 Verify trailer playback resumes on launching app to foreground
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -105,7 +105,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_074 @P0
-  Scenario Outline:TC_074 Verify if user is able to report video
+  Scenario Outline:TES177 Verify if user is able to report video
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -125,7 +125,7 @@ Feature: Video Control Feature
 
 
   @BulletTest @TC_076
-  Scenario Outline:TC_076 Verify if Bullet watermark is visible on all videos
+  Scenario Outline:TES179 Verify if Bullet watermark is visible on all videos
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -140,7 +140,7 @@ Feature: Video Control Feature
       | 7604913183   |
 
   @BulletTest @TC_067
-  Scenario Outline:TC_067 Verify all the video related settings is applied smoothly and video playback is not paused
+  Scenario Outline:TES170 Verify all the video related settings is applied smoothly and video playback is not paused
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home

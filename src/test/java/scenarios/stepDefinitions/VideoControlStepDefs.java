@@ -20,7 +20,7 @@ import utilities.ConfigLoader;
 import utilities.CredsLoader;
 
 public class VideoControlStepDefs {
-        private static final Logger log = LoggerFactory.getLogger(scenarios.stepDefinitions.VideoControlStepDefs.class);
+        private static final Logger log = LoggerFactory.getLogger(VideoControlStepDefs.class);
         private final VideoControlPages videoControlPages;
         CredsLoader credsLoader;
         ConfigLoader configLoader;

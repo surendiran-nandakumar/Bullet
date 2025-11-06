@@ -1,7 +1,7 @@
 Feature: Wallet Feature
 
   @BulletTest  @TC_028 @Wallet
-  Scenario Outline: TC_028 Verify if user lands on Coin screen on tapping coins option from bottom nav bar
+  Scenario Outline: TES131 Verify if user lands on Coin screen on tapping coins option from bottom nav bar
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
@@ -20,7 +20,7 @@ Feature: Wallet Feature
       | 7604913183    |
 
   @BulletTest  @TC_029 @Wallet
-  Scenario Outline: TC_029 Verify user lands on coin purchase screen on tapping "Buy coins"
+  Scenario Outline: TES132 Verify user lands on coin purchase screen on tapping "Buy coins"
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
@@ -36,7 +36,7 @@ Feature: Wallet Feature
       | 7604913183    |
 
   @BulletTest  @TC_030 @Wallet
-  Scenario Outline: TC_030 Verify user lands on coin purchase screen on tapping "Buy coins"
+  Scenario Outline: TES133 Verify user lands on coin history screen on tapping it
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User tap on Wallet tab
@@ -53,7 +53,7 @@ Feature: Wallet Feature
 
 
   @BulletTest  @TC_031 @Wallet
-  Scenario Outline: TC_031 Verify "Free coins" page on tapping it
+  Scenario Outline: TES134 Verify "Free coins" page on tapping it
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User tap on Wallet tab
@@ -74,7 +74,7 @@ Feature: Wallet Feature
       | 7604913183    |
 
   @BulletTest  @TC_032 @Wallet
-  Scenario Outline: TC_032 Verify if newly registered user is displayed with "Profile completion task" and "Turn on Notifications" task
+  Scenario Outline: TES135 Verify if newly registered user is displayed with "Profile completion task" and "Turn on Notifications" task
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User tap on Wallet tab
@@ -92,7 +92,7 @@ Feature: Wallet Feature
 
 
   @BulletTest  @TC_033 @Wallet
-  Scenario Outline: TC_033 Verify if user is able to complete profile on tapping "Complete your profile" task
+  Scenario Outline: TES136 Verify if user is able to complete profile on tapping "Complete your profile" task
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User tap on Wallet tab
@@ -118,7 +118,7 @@ Feature: Wallet Feature
 
 
   @BulletTest  @TC_034 @Wallet
-  Scenario Outline: TC_034 Verify if user is able to tap Turn on notification banner
+  Scenario Outline: TES137 Verify if user is able to tap Turn on notification banner
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User tap on Wallet tab
