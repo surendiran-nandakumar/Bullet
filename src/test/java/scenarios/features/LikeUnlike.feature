@@ -1,7 +1,7 @@
 Feature: Video Control Feature
 
   @BulletTest @TC_081
-  Scenario Outline:TC_081 Verify if user is able to Like videos
+  Scenario Outline:TES184 Verify if user is able to Like videos
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -18,7 +18,7 @@ Feature: Video Control Feature
       | 7604913183    |
 
   @BulletTest  @TC_082
-  Scenario Outline:TC_082  Verify if user is able to Like shows
+  Scenario Outline:TES185  Verify if user is able to Like shows
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -34,7 +34,7 @@ Feature: Video Control Feature
       | 7604913183    |
 
   @BulletTest  @TC_083
-  Scenario Outline:TC_083  Verify Like status will maintain on scrolling video back and forth
+  Scenario Outline:TES186  Verify Like status will maintain on scrolling video back and forth
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -53,7 +53,7 @@ Feature: Video Control Feature
 
 
   @BulletTest  @TC_084
-  Scenario Outline:TC_084  Verify if user is able to unlike videos
+  Scenario Outline:TES187  Verify if user is able to unlike videos
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -74,7 +74,7 @@ Feature: Video Control Feature
 
 
   @BulletTest  @TC_085
-  Scenario Outline:TC_085  Verify if user is able to unlike shows
+  Scenario Outline:TES188  Verify if user is able to unlike shows
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User should click on Explore navigation icon
@@ -93,7 +93,7 @@ Feature: Video Control Feature
 
 
   @BulletTest  @TC_086
-  Scenario Outline:TC_086  Verify Like and unlike on sharing the video
+  Scenario Outline:TES189  Verify Like and unlike on sharing the video
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User should click on Explore navigation icon
@@ -111,7 +111,7 @@ Feature: Video Control Feature
 
 
   @BulletTest  @TC_087
-  Scenario Outline:TC_087  Verify Like and unlike on sharing the shows
+  Scenario Outline:TES190  Verify Like and unlike on sharing the shows
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     When User should click on Explore navigation icon

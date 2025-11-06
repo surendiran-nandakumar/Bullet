@@ -2,7 +2,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_035
-  Scenario Outline:TC_035 Verify the trailer screen
+  Scenario Outline:TES138 Verify the trailer screen
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -18,7 +18,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_036
-  Scenario Outline:TC_036 Verify auto scroll is happening once trailer playback is complete
+  Scenario Outline:TES139 Verify auto scroll is happening once trailer playback is complete
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -31,7 +31,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_037
-  Scenario Outline:TC_037 Verify if user is able to unmute the trailer and audio is increasing and decreasing according to user actions
+  Scenario Outline:TES140 Verify if user is able to unmute the trailer and audio is increasing and decreasing according to user actions
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -47,7 +47,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_038
-  Scenario Outline:TC_038 Verify user lands on episode feed and 1st episode playback happens on tapping "Start"
+  Scenario Outline:TES141 Verify user lands on episode feed and 1st episode playback happens on tapping "Start"
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -63,7 +63,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_039
-  Scenario Outline:TC_039 Verify user lands on episode feed and 1st episode playback happens on tapping "Start"
+  Scenario Outline:TES142 Verify if all episodes of the seriesseason is displaying on clicking "Episodes" button
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -78,7 +78,7 @@ Feature: Show Screen Feature
      | 7604913183    |
 
   @BulletTest @TC_045
-  Scenario Outline:TC_045 Verify the UI on tapping "Episodes" button
+  Scenario Outline:TES148 Verify the UI on tapping "Episodes" button
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -92,7 +92,7 @@ Feature: Show Screen Feature
      | 7604913183    |
 
   @BulletTest @TC_047
-  Scenario Outline:TC_047  Verify trailer playback resumes on launching app to foreground
+  Scenario Outline:TES150  Verify trailer playback resumes on launching app to foreground
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -109,7 +109,7 @@ Feature: Show Screen Feature
 
 
   @BulletTest @TC_048
-  Scenario Outline:TC_048  Verify if user is able to swipe shows in Trailer feed back and forth
+  Scenario Outline:TES151  Verify if user is able to swipe shows in Trailer feed back and forth
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -123,7 +123,7 @@ Feature: Show Screen Feature
       | 7604913183    |
 
   @BulletTest @TC_049
-  Scenario Outline:TC_049  Verify if user lands on Home screen on tapping back from Trailer screen
+  Scenario Outline:TES152  Verify if user lands on Home screen on tapping back from Trailer screen
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home

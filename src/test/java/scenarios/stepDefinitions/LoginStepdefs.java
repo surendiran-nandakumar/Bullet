@@ -152,4 +152,44 @@ public class LoginStepdefs {
         loginPage.enterOtpInBulletAndroid(context.otp);
         context.scenario.log("✅ OTP entered in Bullet");
     }
+
+    @Then("User should not see the arrow key")
+    public void userShouldNotSeeTheArrowKey() {
+        Assert.assertTrue(loginPage.isArrowKeyDisplayed(),"Arrow key is not displayed");
+    }
+
+    @When("User click on {} Text Box")
+    public void userClickOnMobileNumberTextBox(String mobileNumber) {
+        loginPage.enterMobileNum(mobileNumber);
+    }
+
+    @Then("User click on {} text field")
+    public void userClickOnEmailIDTextField(String EmailField) {
+        loginPage.enterTextInMail(EmailField);
+    }
+
+    @Then("User should see the Terms of Use & Privacy Policy")
+    public void userShouldSeeTheTermsOfUsePrivacyPolicy() {
+       Assert.assertTrue(loginPage.isTermsDisplayed(),"Terms and conditions is not displayed");
+    }
+
+    @Then("User should click the Terms of Use & Privacy Policy")
+    public void userShouldClickTheTermsOfUsePrivacyPolicy() {
+      loginPage.clickTermsConditions();
+    }
+
+    @Then("User should see the terms displayed")
+    public void userShouldSeeTheTermsDisplayed() {
+      Assert.assertTrue(loginPage.isTermsOfUseDisplayed(),"Terms of use is not displayed");
+    }
+
+    @Then("User should see coins bonus banner")
+    public void userShouldSeeCoinsBonusBanner() {
+       Assert.assertTrue(loginPage.isSigninBonusBannerDisplayed(),"Signin bonus banner is not displayed");
+    }
+
+    @Then("user should click on back button")
+    public void userShouldClickOnBackButton() {
+      loginPage.backButtonClick();
+    }
 }

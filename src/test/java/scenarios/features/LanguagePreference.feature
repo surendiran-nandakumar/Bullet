@@ -1,7 +1,7 @@
 Feature: Language Preference Screen Feature
 
   @BulletTest @TC_102
-  Scenario Outline:TC_102 Verify new user is able to select Language Preference by logging with mobile number
+  Scenario Outline:TES205 Verify new user is able to select Language Preference by logging with mobile number
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter the OTP Number in the respective field
@@ -15,7 +15,7 @@ Feature: Language Preference Screen Feature
 
 
   @BulletTest @TC_103
-  Scenario Outline: TC_103 Verify new user is able to select Language Preference by logging with email id
+  Scenario Outline: TES206 Verify new user is able to select Language Preference by logging with email id
     #Given User click the arrow button
     Then User should select email icon
     When User click on <EmailID> Text Box And Enter The Number

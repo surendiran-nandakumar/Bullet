@@ -3,7 +3,7 @@ Feature: Login Feature
 
 
   @BulletTest @TC_014 @P0 @login
-  Scenario Outline: TC_014 Verify whether user is able to Login with mobile number
+  Scenario Outline:TES117 Verify if user is able to login with mobile number
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
@@ -13,7 +13,7 @@ Feature: Login Feature
 
 
   @BulletTest @TC_013 @P0 @login
-  Scenario Outline: TC_013 Verify whether user is able to sign up with email ID
+  Scenario Outline: TES116 Verify whether user is able to sign up with email ID
     Given User should select email icon
     Then User click on <EmailID> text box
     And User retrieve OTP from Gmail
@@ -26,7 +26,7 @@ Feature: Login Feature
 
 
   @BulletTest @TC_015 @login
-  Scenario Outline: TC_015 Verify whether user is able to Login with email ID
+  Scenario Outline: TES118 Verify if user is able to login with email
     Given User should select email icon
     Then User click on <EmailID> text box
     And User retrieve OTP from Gmail
@@ -37,7 +37,7 @@ Feature: Login Feature
       |surendiran.n@moolya.com|
 
   @BulletTest @TC_011  @login
-  Scenario Outline: TC_011 Verify sign-up with Google for India users
+  Scenario Outline: TES114 Verify sign-up with Google for India users
     #Given User click the arrow button
     Then User should select Google icon
     Then User should select the google account
@@ -48,7 +48,7 @@ Feature: Login Feature
       |
 
   @BulletTest @TC_016 @login
-  Scenario Outline: TC_016 Verify whether user is able to Login with google accounts
+  Scenario Outline: TES119 Verify if user is able to login with Google accounts
     #Given User click the arrow button
     Then User should select Google icon
     Then User should select the google account
@@ -59,7 +59,7 @@ Feature: Login Feature
       |
 
   @BulletTest @TC_007 @login
-  Scenario Outline: TC_007 Verify whether user is able to click on Resend button for Mobile number
+  Scenario Outline: TES110 Verify whether user is able to click on Resend button for Mobile number
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User click on resend button
@@ -70,7 +70,7 @@ Feature: Login Feature
       | 7604913180    |
 
   @BulletTest @TC_019  @login
-  Scenario Outline: TC_019 Verify if user receives proper error message on entering invalid OTP for email login
+  Scenario Outline: TES122 Verify if user receives proper error message on entering invalid OTP for email login
     #Given User click the arrow button
     Then User should select email icon
     When User click on <EmailID> Text Box And Enter The Number
@@ -82,7 +82,7 @@ Feature: Login Feature
 
 
   @BulletTest @TC_020 @P0 @login
-  Scenario Outline: TC_020 Verify if "Resend" link is visible and working for email login
+  Scenario Outline: TES123 Verify if "Resend" link is visible and working for email login
     #Given User click the arrow button
     Then User should select email icon
     Then User click on <EmailID> text box
@@ -95,7 +95,7 @@ Feature: Login Feature
 
 
   @BulletTest @TC_006 @login
-  Scenario Outline: TC_006 Verify if user receives proper error message on entering invalid OTP with mobile number
+  Scenario Outline: TES109 Verify if user receives proper error message on entering invalid OTP with mobile number
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter the wrong OTP Number in the respective field
@@ -105,7 +105,7 @@ Feature: Login Feature
       | 7604913171    |
 
   @BulletTest @TC_005 @login
-  Scenario Outline: TC_005 Verify proper mobile number validations
+  Scenario Outline: TES108 Verify proper mobile number validations
     #Given User click the arrow button
     When User click on <Mobile Number> Text Box And Enter The Number
     Then User should check the mobile number is valid
@@ -114,5 +114,66 @@ Feature: Login Feature
     Examples:
       | Mobile Number |
       | 1234567807    |
+
+
+
+  @BulletTest @TC_138 @login
+  Scenario Outline: @TC_138 Verify proper mobile number validations by entering less than 10 digits and see arrow key is visible
+    Given User click on <Mobile Number> Text Box
+    Then User should not see the arrow key
+
+    Examples:
+      | Mobile Number |
+      | 123456   |
+
+
+  @BulletTest @TC_139 @login
+  Scenario Outline: @TC_139 Verify proper email id validations by entering mail id without .com and see arrow key is visible
+    Then User should select email icon
+    Then User click on <EmailID> text field
+    Then User should not see the arrow key
+
+    Examples:
+      | EmailID            |
+      | surendiran.n@yahoo |
+
+
+  @BulletTest @TC_140 @login
+  Scenario Outline: @TC_140 Verify whether user able to see Terms of Use & Privacy Policy
+    Given User click on <Mobile Number> Text Box
+    Then User should not see the arrow key
+    Then User should see the Terms of Use & Privacy Policy
+    Then User should click the Terms of Use & Privacy Policy
+    Then User should see the terms displayed
+
+    Examples:
+      | Mobile Number |
+      | 123456   |
+
+
+  @BulletTest @TC_141 @login
+  Scenario Outline: @TC_141 Verify whether user able to see sign up coin bonus
+    Given User click on <Mobile Number> Text Box
+    Then User should not see the arrow key
+    Then User should see coins bonus banner
+
+    Examples:
+      | Mobile Number |
+      | 123456   |
+
+
+  @BulletTest @TC_142 @login
+  Scenario Outline: @TC_142 Verify whether user able enter mobile number and navigates to otp screen and click on back arrow
+    Given User click on <Mobile Number> Text Box And Enter The Number
+    When user should click on back button
+
+    Examples:
+      | Mobile Number |
+      | 7604913183   |
+
+
+
+
+
 
 

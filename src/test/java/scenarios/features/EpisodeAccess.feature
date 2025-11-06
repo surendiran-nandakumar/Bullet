@@ -1,7 +1,7 @@
 Feature: Episode Access Feature
 
   @BulletTest @TC_050
-  Scenario Outline:TC_050 Verify the UI on tapping "Episodes" button
+  Scenario Outline:TES153 Verify the UI on tapping "Episodes" button
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     Then User should select the language preference for new user
@@ -18,7 +18,7 @@ Feature: Episode Access Feature
 
 
   @BulletTest @TC_051
-  Scenario Outline:TC_051 Verify Unlock video functionality if user has coin balance <3 to view the episode
+  Scenario Outline:TES154 Verify Unlock video functionality if user has coin balance <3 to view the episode
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -34,7 +34,7 @@ Feature: Episode Access Feature
       | 7604913183   |
 
   @BulletTest @TC_052
-  Scenario Outline:TC_052 Verify on tapping "Refill wallet and unlock" button
+  Scenario Outline:TES155 Verify on tapping "Refill wallet and unlock" button
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -53,7 +53,7 @@ Feature: Episode Access Feature
 
 
   @BulletTest @TC_053
-  Scenario Outline:TC_053 Verify if user is able to resume watching videos once payment is done/ post purchasing the coin
+  Scenario Outline:TES156 Verify if user is able to resume watching videos once payment is done/ post purchasing the coin
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -76,7 +76,7 @@ Feature: Episode Access Feature
 
 
   @BulletTest @TC_054
-  Scenario Outline:TC_054 Verify if user is able to resume watching if payment failed
+  Scenario Outline:TES157 Verify if user is able to resume watching if payment failed
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
 #    Then User should select the language preference for new user
@@ -104,7 +104,7 @@ Feature: Episode Access Feature
 
 
   @BulletTest @TC_056
-  Scenario Outline:TC_056 Verify if coins are deducted again for already unlocked episodes
+  Scenario Outline:TES159 Verify if coins are deducted again for already unlocked episodes
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
@@ -121,7 +121,7 @@ Feature: Episode Access Feature
 
 
   @BulletTest @TC_057
-  Scenario Outline:TC_057 Verify the behaviour on tapping "Watch Ad and unlock for free" button
+  Scenario Outline:TES160 Verify the behaviour on tapping "Watch Ad and unlock for free" button
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home

@@ -1,8 +1,6 @@
 package pages;
 
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
@@ -16,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import java.time.Duration;
-import java.time.Instant;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -64,7 +61,16 @@ public class LoginPage extends BasePage {
     public WebElement otpTextValidation;
     @AndroidFindBy (xpath = "//android.widget.EditText")
     public WebElement emailTextField;
-
+    @AndroidFindBy (xpath = "//android.widget.TextView[@text=\"or\"]")
+    public WebElement orText;
+    @AndroidFindBy (xpath="//android.widget.TextView[contains(@text,'Terms of Use & Privacy Policy')]")
+    public WebElement termsConditions;
+    @AndroidFindBy (xpath = "//android.widget.TextView[@text=\"Terms of Use\"]")
+    public WebElement termsOfUse;
+    @AndroidFindBy (xpath = "//android.widget.TextView[@text=\"30 when you sign up!\"]")
+    public WebElement signInBonusBanner;
+    @AndroidFindBy (xpath = "//android.view.View[@content-desc=\"Back\"]")
+    public WebElement backArrowClick;
 
     public LoginPage(AppiumDriver driver){
         super(driver);
@@ -142,7 +148,7 @@ public class LoginPage extends BasePage {
         click(OtpField);
     }
 
-    public boolean otpEntry() {
+    public void otpEntry() {
         click(OtpField);
 
 // cast to AndroidDriver
@@ -155,7 +161,6 @@ public class LoginPage extends BasePage {
         driver.pressKey(new KeyEvent(AndroidKey.DIGIT_3));
 
 
-        return true;
     }
 
     public boolean isOTPfieldisDisplayed(){
@@ -322,6 +327,30 @@ public class LoginPage extends BasePage {
         } catch (Exception e) {
             throw new RuntimeException("Failed to enter OTP in Bullet app (Android): " + e.getMessage(), e);
         }
+    }
+
+    public boolean isArrowKeyDisplayed(){
+        return isElementPresent(orText);
+    }
+
+    public boolean isTermsDisplayed(){
+        return isElementPresent(termsConditions);
+    }
+
+    public void clickTermsConditions(){
+        click(termsConditions);
+    }
+
+    public boolean isTermsOfUseDisplayed(){
+        return isElementPresent(termsOfUse);
+    }
+
+    public boolean isSigninBonusBannerDisplayed(){
+        return isElementPresent(signInBonusBanner);
+    }
+
+    public void backButtonClick(){
+        click(backArrowClick);
     }
 
 }

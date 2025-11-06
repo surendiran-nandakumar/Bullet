@@ -1,7 +1,7 @@
 Feature: Payments and Coins Feature
 
   @BulletTest  @TC_104 @PaymentsAndCoins
-  Scenario Outline: TC_104 Verify wallet screen displays all sections (Free Coins, Buy Coins, Coin History)
+  Scenario Outline: TES207 Verify wallet screen displays all sections (Free Coins, Buy Coins, Coin History)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -24,7 +24,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_105 @PaymentsAndCoins
-  Scenario Outline: TC_105 Verify Buy Coins page lists all available coin packages correctly
+  Scenario Outline: TES208 Verify Buy Coins page lists all available coin packages correctly
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -50,7 +50,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_107 @PaymentsAndCoins
-  Scenario Outline: TC_107 Verify correct package details appear before payment
+  Scenario Outline: TES210 Verify correct package details appear before payment
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -70,7 +70,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_124 @PaymentsAndCoins
-  Scenario Outline: TC_124 Verify ₹49 package displays correctly with 150 coins
+  Scenario Outline: TES226 Verify ₹49 package displays correctly with 150 coins
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -90,7 +90,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_125 @PaymentsAndCoins
-  Scenario Outline: TC_125 Verify ₹99 package displays correctly with 300 coins
+  Scenario Outline: TES227 Verify ₹99 package displays correctly with 300 coins
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -109,7 +109,7 @@ Feature: Payments and Coins Feature
       | 7604913183    |
 
   @BulletTest  @TC_126 @PaymentsAndCoins
-  Scenario Outline: TC_126 Verify ₹129 package displays correctly with 389 coins
+  Scenario Outline: TES228 Verify ₹129 package displays correctly with 389 coins
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -128,7 +128,7 @@ Feature: Payments and Coins Feature
       | 7604913183    |
 
   @BulletTest  @TC_128 @PaymentsAndCoins
-  Scenario Outline: TC_128 Verify ₹199 package displays correctly with 600 + 60 coins (10% bonus)
+  Scenario Outline: TES230 Verify ₹199 package displays correctly with 600 + 60 coins (10% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -148,7 +148,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_129 @PaymentsAndCoins
-  Scenario Outline: TC_129 Verify ₹249 package displays correctly with 750 + 113 coins (15% bonus)
+  Scenario Outline: TES231 Verify ₹249 package displays correctly with 750 + 113 coins (15% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -168,7 +168,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_130 @PaymentsAndCoins
-  Scenario Outline: TC_130 Verify ₹349 package displays correctly with 1060 + 265 coins (25% bonus)
+  Scenario Outline: TES232 Verify ₹349 package displays correctly with 1060 + 265 coins (25% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -188,7 +188,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_131 @PaymentsAndCoins
-  Scenario Outline: TC_131 Verify ₹499 package displays correctly with 1515 + 530 coins (35% bonus)
+  Scenario Outline: TES233 Verify ₹499 package displays correctly with 1515 + 530 coins (35% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -207,7 +207,7 @@ Feature: Payments and Coins Feature
       | 7604913183    |
 
   @BulletTest  @TC_132 @PaymentsAndCoins
-  Scenario Outline: TC_132 Verify ₹999 package displays correctly with 2999 + 1500 coins (50% bonus)
+  Scenario Outline: TES234 Verify ₹999 package displays correctly with 2999 + 1500 coins (50% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -227,7 +227,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_133 @PaymentsAndCoins
-  Scenario Outline: TC_133 Verify ₹1999 package displays correctly with 5999 + 3599 coins (60% bonus)
+  Scenario Outline: TES235 Verify ₹1999 package displays correctly with 5999 + 3599 coins (60% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -247,7 +247,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest  @TC_134 @PaymentsAndCoins
-  Scenario Outline: TC_134 Verify ₹2999 package displays correctly with 8888 + 6666 coins (75% bonus)
+  Scenario Outline: TES236 Verify ₹2999 package displays correctly with 8888 + 6666 coins (75% bonus)
     Given User click on <Mobile Number> Text Box And Enter The Number
     When User Enter The OTP Number
     Then User is on home screen
@@ -267,7 +267,7 @@ Feature: Payments and Coins Feature
 
 
   @BulletTest @TC_137
-  Scenario Outline:TC_137 Verify Coin History and Data Persistence
+  Scenario Outline:TES221 Verify Coin History and Data Persistence
     Given User click on <Mobile Number> Text Box And Enter The Number
     Then User Enter The OTP Number
     And User Clicked  on the Explore Tab in Home
